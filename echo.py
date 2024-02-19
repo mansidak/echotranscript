@@ -7,7 +7,7 @@ class EchoHandler(BaseHTTPRequestHandler):
         parsed_path = parse.urlparse(self.path)
         query = parse.parse_qs(parsed_path.query)
 
-        # Extract the 'text' parameter, if it exists
+        # Extract the 'text' parameter, if it existsf
         text = query.get('text', [''])[0]  # Default to an empty string if not found
 
         # Set headers
